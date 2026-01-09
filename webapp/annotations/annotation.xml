@@ -13,10 +13,16 @@
                     <Collection>
                         <PropertyPath>SupplierID</PropertyPath>
                         <PropertyPath>Discontinued</PropertyPath>
+                        <PropertyPath>ProductID</PropertyPath>
                     </Collection>
                 </Annotation>
                 <Annotation Term="UI.LineItem">
                     <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SupplierID"/>
+                            <PropertyValue Property="Label" String="Supplier ID"/>
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+                        </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="ProductName"/>
                             <PropertyValue Property="Label" String="Name of Product"/>
